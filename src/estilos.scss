@@ -1,0 +1,156 @@
+/* SCSS HEX */
+$cabbage-pont: #384932;
+$pearl-bush: #eae4dc;
+$sandrift: #a99177;
+$makara: #8d826a;
+$shadow: #7e6852;
+$zeus: #1a1613;
+$cloudy: #a7a29e;
+$tapa: #de937a;
+$mongoose: #bdac84;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html , body , #root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #384932;  
+    color: #eae4dc; 
+    font-family: Arial;  
+    text-align: center;  
+}
+
+.header {
+    background-color: #8d826a; 
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    align-items: center;
+
+    &__image {
+        width: 24px;
+        height: 24px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav a {
+        margin-left: 1rem;
+    }
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 1rem;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.item {
+    color :#22243b;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &__button {
+        background-color: #a99177;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: black;
+        border-radius: 3px;
+        margin-top: 10px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: rgb(255, 153, 0);
+}
+
+.loader {
+    position:relative;
+  overflow:hidden;
+  width:300px;
+  height:200px;
+}
+.logoHDP {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+    position:absolute;
+    top:-50px;;
+    height:50px;
+    width:100%;
+    left:0;
+    animation-name:slideup;
+    animation-delay:0.5s;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-out;
+  }
+  @keyframes slideup {
+    0%{top:-50px}
+    100%{top:0;}
+  }
+
+  
+.page__header {
+    margin-bottom: 3rem;
+}
+
+ul {list-style: none;}
+
+.CarritoLogo {
+    bottom: -10%;
+    transform: scale(100%);
+}
+.detail-image{
+    width:200px;
+    height:200px;
+
+}.container {
+    position:relative;
+  overflow:hidden;
+  width:500px;
+  height:500px;
+    transform: scale(90%);
+}
